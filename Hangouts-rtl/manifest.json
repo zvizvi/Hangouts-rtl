@@ -1,0 +1,33 @@
+{
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"name": "Hangouts rtl",
+	"version": "0.0.1",
+	"author": "zvizvi5@outlook.com",
+	"permissions": [],
+	"icons": {
+		"48": "images/icon_48.png",
+		"128": "images/icon_128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"16": "images/icon_16.png",
+			"22": "images/icon_22.png",
+			"24": "images/icon_24.png",
+			"32": "images/icon_32.png",
+			"44": "images/icon_44.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://hangouts.google.com/webchat/*"
+			],
+			"js": [
+				"js/jquery-1.11.3.min.js",
+				"js/main.js"
+			],
+			"all_frames": true
+		}
+	],
+	"manifest_version": 2
+}
