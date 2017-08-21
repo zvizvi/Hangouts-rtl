@@ -1,13 +1,12 @@
 {
 	"update_url": "https://clients2.google.com/service/update2/crx",
 	"manifest_version": 2,
-	"name": "Hangouts RTL",
-	"description": "Extension tats fix Google Hangouts direction to RTL. \nUseful for RTL languages (like Hebrew, Arabic etc.).",
+	"name": "הנגאאוטס ימין לשמאל",
+	"description": "מתקן את הנגאאוטס (ג'ימייל צ'אט) מימין לשמאל",
 	"version": "0.0.4",
 	"author": "zvizvi5@outlook.com",
 	"permissions": [
-		"http://*/*",
-		"https://*/*"
+		"https://hangouts.google.com/webchat/*"
 	],
 	"icons": {
 		"48": "images/icon_48.png",
@@ -28,8 +27,7 @@
 				"js/main.js"
 			],
 			"matches": [
-				"http://*/*",
-				"https://*/*"
+				"https://hangouts.google.com/webchat/*"
 			],
 			"run_at": "document_end",
 			"all_frames": true
